@@ -15,15 +15,18 @@ const useStyles = makeStyles(theme => ({
     fontFamily: 'Secular One, sans-serif',
     [theme.breakpoints.down('sm')]: {
       fontSize: '1.3rem',
-    }
+    },
   },
+  textValue: {
+    maxHeight: '100vh'
+  }
 }))
 
 function App() {
   const classes = useStyles();
   return (
     <div className={classes.root}>
-      <TimeByCity city={'ירושלים'}/>
+      <TimeByCity className={classes.textValue} city={'ירושלים'}/>
     </div>
   )
 }
