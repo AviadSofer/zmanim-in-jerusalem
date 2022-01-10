@@ -1,8 +1,8 @@
 import { useState } from 'react';
-import { makeStyles } from '@mui/styles';
+import { makeStyles } from '@material-ui/core';
 import TimeByCity from './TimeByCity';
 
-const useStyles = makeStyles({
+const useStyles = makeStyles(theme => ({
   root: {
     direction: 'rtl',
     height: '100vh',
@@ -12,8 +12,11 @@ const useStyles = makeStyles({
     backgroundColor: '#ded4a4',
     whiteSpace: 'pre-wrap',
     fontSize: '3rem',
+    [theme.breakpoints.down('sm')]: {
+      fontSize: '1.3rem',
+    }
   },
-});
+}))
 
 function App() {
   const classes = useStyles();
