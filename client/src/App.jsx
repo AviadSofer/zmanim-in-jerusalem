@@ -15,6 +15,7 @@ const useStyles = makeStyles(theme => ({
     fontFamily: 'Secular One, sans-serif',
     [theme.breakpoints.down('sm')]: {
       fontSize: '1.3rem',
+      maxHeight: '100vh'
     },
   },
   textValue: {
