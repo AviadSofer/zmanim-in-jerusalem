@@ -12,6 +12,7 @@ const useStyles = makeStyles(theme => ({
     backgroundColor: '#ded4a4',
     whiteSpace: 'pre-wrap',
     fontSize: '3rem',
+    fontFamily: 'Secular One, sans-serif',
     [theme.breakpoints.down('sm')]: {
       fontSize: '1.3rem',
     }
