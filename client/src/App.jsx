@@ -1,17 +1,18 @@
 import { useState } from 'react';
 import { makeStyles } from '@material-ui/core';
 import TimeByCity from './TimeByCity';
+import Explain from './Explain';
 
 const useStyles = makeStyles(theme => ({
   root: {
     direction: 'rtl',
-    height: '100vh',
+    minHeight: '100vh',
     display: 'flex',
+    flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: '#ded4a4',
     whiteSpace: 'pre-wrap',
-    fontSize: '3rem',
     fontFamily: 'Secular One, sans-serif',
     [theme.breakpoints.down('sm')]: {
       fontSize: '1.3rem'    
@@ -24,6 +25,7 @@ function App() {
   return (
     <div className={classes.root}>
       <TimeByCity city={'ירושלים'}/>
+      <Explain/>
     </div>
   )
 }
