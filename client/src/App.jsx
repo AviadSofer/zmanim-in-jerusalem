@@ -5,7 +5,7 @@ import TimeByCity from './TimeByCity';
 const useStyles = makeStyles(theme => ({
   root: {
     direction: 'rtl',
-    height: '80vh',
+    height: '99vh',
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
