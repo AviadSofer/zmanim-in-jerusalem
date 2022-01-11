@@ -12,11 +12,7 @@ const useStyles = makeStyles(theme => ({
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: '#ded4a4',
-    whiteSpace: 'pre-wrap',
-    fontFamily: 'Secular One, sans-serif',
-    [theme.breakpoints.down('sm')]: {
-      fontSize: '1.3rem'    
-    },
+    fontFamily: 'Secular One, sans-serif'
   },
 }))
 

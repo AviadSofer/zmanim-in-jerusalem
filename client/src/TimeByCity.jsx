@@ -1,14 +1,20 @@
 import React, { useState } from 'react';
 import { makeStyles } from '@material-ui/core';
 
-const useStyles = makeStyles(() => ({
+const useStyles = makeStyles((theme) => ({
     root: {
         height: '100vh',
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',
+        alignItems: 'center',
         textAlign: 'center',
+        margin: 'auto 30px',
         fontSize: '2rem',
+        whiteSpace: 'pre-wrap',
+        [theme.breakpoints.down('sm')]: {
+            fontSize: '1.3rem'    
+          },
     }
 }))
 

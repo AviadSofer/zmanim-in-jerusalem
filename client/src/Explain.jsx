@@ -8,7 +8,11 @@ const useStyles = makeStyles(theme => ({
         justifyContent: 'center',
         textAlign: 'center',
         alignItems: 'center',
-        fontSize: '1.7rem'
+        margin: 'auto 30px',
+        fontSize: '1.7rem',
+        [theme.breakpoints.down('sm')]: {
+            fontSize: '1.3rem'    
+          },
     },
 }))
 
