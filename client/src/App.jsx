@@ -14,7 +14,7 @@ const useStyles = makeStyles(theme => ({
     fontSize: '3rem',
     fontFamily: 'Secular One, sans-serif',
     [theme.breakpoints.down('sm')]: {
-      height: '-webkit-fill-available',
+      minHeight: '-webkit-fill-available',
       fontSize: '1.3rem'    
     },
   },
