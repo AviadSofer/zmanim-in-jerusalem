@@ -7,8 +7,6 @@ const useStyles = makeStyles((theme) => ({
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',
-        alignItems: 'center',
-        textAlign: 'center',
         margin: 'auto 30px',
         fontSize: '2rem',
         whiteSpace: 'pre-wrap',
@@ -24,13 +22,13 @@ function TimeByCity(props) {
     async function getTimeInCity(city) {
         const response = await fetch(`https://chvsunset.herokuapp.com/api/?city=${city}`);
         const data = await response.json();
-        return (`
-        הזמנים רלוונטיים ל${city}.
+        return (
+        `הזמנים רלוונטיים ל${city}.
         הנץ ב${data.netz},
         הגר"א ב${data.gra},
         חצות ב${data.chatzos},
-        שקיעה ב${data.shkia}
-        `);
+        שקיעה ב${data.shkia}`
+        );
     };
     (async () => setText(await getTimeInCity(props.city)))();
 
