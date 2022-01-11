@@ -5,7 +5,7 @@ import TimeByCity from './TimeByCity';
 const useStyles = makeStyles(theme => ({
   root: {
     direction: 'rtl',
-    height: '99vh',
+    height: '100vh',
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
@@ -14,7 +14,9 @@ const useStyles = makeStyles(theme => ({
     fontSize: '3rem',
     fontFamily: 'Secular One, sans-serif',
     [theme.breakpoints.down('sm')]: {
-      fontSize: '1.3rem'    },
+      height: '-webkit-fill-available',
+      fontSize: '1.3rem'    
+    },
   },
 }))
 
