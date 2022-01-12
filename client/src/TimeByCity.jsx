@@ -10,7 +10,7 @@ const useStyles = makeStyles((theme) => ({
         fontSize: '2rem',
         whiteSpace: 'pre-wrap',
         [theme.breakpoints.down('sm')]: {
-            height: '80vh',
+            height: '60%',
             maxHeight: '80vh',
             fontSize: '1.3rem'
           },
