@@ -21,12 +21,10 @@ function Header() {
       setChecked(true);
   }, [])
   return (
-  <Collapse in={checked} {...(checked ? { timeout: 1300 } : {})} collapsedHeight={50}>
   <div className={classes.root}>
       <TimeByCity city={'ירושלים'}/>
       <GoDown/>
   </div>
-  </Collapse>
   )
 }
 
