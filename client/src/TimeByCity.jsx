@@ -3,7 +3,6 @@ import { makeStyles } from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
     root: {
-        maxHeight: '80vh',
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',
@@ -11,7 +10,9 @@ const useStyles = makeStyles((theme) => ({
         fontSize: '2rem',
         whiteSpace: 'pre-wrap',
         [theme.breakpoints.down('sm')]: {
-            fontSize: '1.3rem'    
+            height: '80vh',
+            maxHeight: '80vh',
+            fontSize: '1.3rem'
           },
     }
 }))
