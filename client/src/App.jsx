@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { makeStyles } from '@material-ui/core';
-import TimeByCity from './TimeByCity';
 import Explain from './Explain';
+import Header from './Header';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -20,7 +20,7 @@ function App() {
   const classes = useStyles();
   return (
     <div className={classes.root}>
-      <TimeByCity city={'ירושלים'}/>
+      <Header/>
       <Explain/>
     </div>
   )
