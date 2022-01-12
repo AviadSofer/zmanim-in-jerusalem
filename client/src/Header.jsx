@@ -5,6 +5,7 @@ import TimeByCity from './TimeByCity';
 
 const useStyles = makeStyles(theme => ({
     root: {
+      height: '99vh',
       maxHeight: '100vh',
       display: 'flex',
       flexDirection: 'column',

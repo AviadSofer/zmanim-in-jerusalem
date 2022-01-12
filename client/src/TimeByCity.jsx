@@ -3,6 +3,7 @@ import { makeStyles } from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
     root: {
+        maxHeight: '80vh',
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',
