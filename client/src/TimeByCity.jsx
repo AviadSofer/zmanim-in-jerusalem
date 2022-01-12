@@ -6,12 +6,10 @@ const useStyles = makeStyles((theme) => ({
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',
-        margin: 'auto 30px',
+        margin: '150px 30px',
         fontSize: '2rem',
         whiteSpace: 'pre-wrap',
         [theme.breakpoints.down('sm')]: {
-            height: '60%',
-            maxHeight: '80vh',
             fontSize: '1.3rem'
           },
     }
